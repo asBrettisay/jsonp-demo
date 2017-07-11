@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>JSONP Demo</title>
+  </head>
+<body>
+  
+  <script>
+    var stuff;
+    function parseContent(content) {
+      stuff = content;
+      console.log(stuff.message);
+    }
+</script>
+
+  <script type="application/javascript" src="/api/stuff?callback=parseContent"></script>
+</body>
+</html>
